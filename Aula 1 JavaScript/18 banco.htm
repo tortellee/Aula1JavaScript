@@ -1,0 +1,23 @@
+18-Elabore um programa que classifique os clientes de um banco em VIP ou NORMAL. Clientes
+regulares que adquirirem mais de 1 Milhão e que tem um bom histórico de pagamento ou que
+estão conosco a mais de 20 anos devem ser considerados VIP
+caso contrário é um cliente NORMAL.
+
+<script>
+var cliente,milhao,idade,devedor;
+cliente = prompt("Informe o nome do cliente");
+milhao = prompt ("Cliente: " +cliente+ "\nInforme a quantidade a ser sacada");
+idade = prompt ("Cliente: " +cliente+ "\nInforme a quantidade de anos que ja eh cliente");
+devedor = prompt ("Cliente: " +cliente+ "\nInforme se esta em divida com o banco\nDigite 1: Sim\nDigite 2: Nao");
+if (milhao >= 1000000.00) {
+  alert("Cliente: " +cliente+ "\nStatus: VIP ");
+}else if (idade >= 20) {
+  alert("Cliente: " +cliente+ "\nStatus: VIP ");
+}else if (devedor == 1) {
+  alert("Cliente: " +cliente+ "\nStatus: NORMAL ");
+}else if (devedor == 2) {
+  alert("Cliente: " +cliente+ "\nStatus: VIP ");
+}else {
+  alert("Cliente: " +cliente+ "\nStatus: NORMAL ");
+}
+</script>

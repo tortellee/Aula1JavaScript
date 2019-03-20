@@ -1,0 +1,20 @@
+10- Desenvolva um Algoritmo que lê o nome e as 4 notas bimestrais de um aluno.
+Em seguida o Algoritmo calcula e escreve a média obtida pelo aluno
+escrevendo também se o aluno foi aprovado ou reprovado. Média para aprovação = 6.
+<script>
+var nota1,nota2,nota3,nota4,media;
+var aluno = prompt("Informe o nome do aluno");
+nota1 = prompt("Informe a nota do primeiro bimestre");
+nota2 = prompt("Informe a nota do segundo bimestre");
+nota3 = prompt("Informe a nota do terceiro bimestre");
+nota4 = prompt("Informe a nota do quarto bimestre");
+alert ("O nome do aluno informado foi: "+aluno);
+alert ("E as notas informadas foram: | "+nota1+" | "+nota2+" | "+nota3+" | "+nota4+" | ");
+media = (parseFloat(nota1)+parseFloat(nota2)+parseFloat(nota3)+parseFloat(nota4))/parseFloat(4);
+alert ("A media do aluno " +aluno+ " foi: "+media);
+if (media >= 6.0){
+  alert("Aluno: "+aluno+" ,APROVADO !!");
+}else if (media < 6.0) {
+  alert("Aluno: "+aluno+" ,REPROVADO !!");
+}
+</script>

@@ -1,0 +1,53 @@
+21 - Elabore um algoritmo que dada a idade de um nadador
+classifique-o em uma das seguintes categorias:
+Infantil A = 5 a 7 anos
+Infantil B = 8 a 11 anos
+Juvenil A = 12 a 13 anos
+Juvenil B = 14 a 17 anos
+Adultos = Maiores de 18 anos
+
+<script>
+var nome,idade;
+nome = prompt ("Informe o nome");
+idade = prompt ("Informe a idade");
+
+      switch (idade) {
+      case ("0"):
+      case ("1"):
+      case ("2"):
+      case ("3"):
+      case ("4"):
+
+        alert("A idade nao corresponde a nenhuma das categorias");
+        break;
+
+      case ("5"):
+      case ("6"):
+      case ("7"):
+          alert("Nome: "+nome+"\nIdade: "+idade+"\nCategoria: Infantil A");
+          break;
+
+      case ("8"):
+      case ("9"):
+      case ("10"):
+      case ("11"):
+          alert("Nome: "+nome+"\nIdade: "+idade+"\nCategoria: Infantil B");
+          break;
+
+      case ("12"):
+      case ("13"):
+          alert("Nome: "+nome+"\nIdade: "+idade+"\nCategoria: Juvenil A");
+          break;
+
+      case ("14"):
+      case ("15"):
+      case ("16"):
+      case ("17"):
+          alert("Nome: "+nome+"\nIdade: "+idade+"\nCategoria: Juvenil B");
+          break;
+
+          default:
+          alert("Nome: "+nome+"\nIdade: "+idade+"\nCategoria: Adulto");
+          break;
+}
+</script>

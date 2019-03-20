@@ -1,0 +1,31 @@
+3 -Construa um algoritmo para pagamento de comissão de vendedores de peças automotivas, levando em consideração que a comissão do vendedor será de 5% do total da venda. O usuário deve inserir os seguintes dados abaixo, e ao final o sistema deve mostrar o valor total da compra e o valor da comissão do vendedor:
+Identificação do vendedor
+Código da peça
+Preço unitário da peça
+Quantidade vendida
+
+<script>
+var vendedor,produto,quantidade,banco,pneu,oleo,quantbanco,quantpneu,quantoleo,valortotal,comissao,quantvendida;
+
+vendedor = prompt ("Informe o nome do vendedor");
+alert ("Precos: \nBanco: R$ 400.00\nPneu: R$ 300.00\nOleo: R$ 200.00\nValor referente a unidade");
+banco = prompt ("Informe a quantidade de Banco(s):");
+pneu = prompt ("Informe a quantidade de Pneu(s):");
+oleo = prompt ("Informe a quantidade de Ole(s):");
+
+quantbanco = banco * 400
+quantpneu = pneu * 300
+quantoleo = oleo * 200
+
+valortotal = quantbanco + quantpneu + quantoleo;
+quantvendida =  parseInt(banco)+parseInt(pneu)+parseInt(oleo);
+comissao = (valortotal*5)/100;
+
+alert("Valor Total: R$ "+valortotal);
+
+alert("Vendedor: "+vendedor+"\nComissao: R$ "+comissao);
+
+alert("Total de produtos vendidos: "+quantvendida);
+
+</script>
+

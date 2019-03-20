@@ -1,0 +1,22 @@
+19-Elaborar um programa que verifique e exiba qual o subsídio de um escoteiro Lobinho ,
+sendo que pode variar de acordo com o tempo de associado da seguinte forma:
+o subsídio para membros a um ano é de 25 Reais, de 35 reais para membros a dois anos,
+e de 50 reais para membros a mais de 2 anos.
+
+<script>
+var nome,tempo,
+nome = prompt ("Informe seu nome");
+tempo = prompt ("Informe seu tempo de associado de escoteiro lobinho:\nPara Mes(es) informe: 0");
+if (tempo == 1) {
+  alert("Cliente: " +nome+ "\nTempo de socio: " +tempo+ "\nContribuicao: R$ 25,00 Reais ");
+}else if (tempo == 0 ) {
+  alert("Cliente: " +nome+ "\nTempo de socio: Ainda nao completou 1 ano \nContribuicao: ISENTO ! ");
+}else if (tempo < 0 ) {
+  alert("Tempo informado incorreto !");
+}else if (tempo == 2) {
+    alert("Cliente: " +nome+ "\nTempo de socio: " +tempo+ "\nContribuicao: R$ 35,00 Reais ");
+}else {
+  alert("Cliente: " +nome+ "\nTempo de socio: " +tempo+ "\nContribuicao: R$ 50,00 Reais ");
+}
+
+</script>

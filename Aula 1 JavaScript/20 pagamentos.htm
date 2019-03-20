@@ -1,0 +1,103 @@
+20-Elabora um programa para calcular os descontos oferecidos por uma loja da cidade, de acordo com os critérios:
+Pagamento a vista 50% de desconto
+Pagamento em cheque 40% de desconto
+Pagamento com cheque pré datado 30 dias(20%)
+Pagamento com cheque pré datado 30 e 60 dias(10%)
+Pagamento com cheque pré datado 30 60 e 90 dias(5%)
+Cartão de Crédito 30% de desconto
+Além disso cliente cadastrado tem um desconto de 5% adicional
+
+<script>
+var cadastro,nome,pagamento,preco,precofinal;
+nome = prompt("Informe o nome do cliente","Ana");
+cadastro = prompt ("Deseja manter o cadastro do cliente?\nDigite 1 para Sim\nDigite 2 para Nao","1");
+switch (cadastro) {
+  case ("1"):
+  alert("CLIENTE: "+nome+" \nCadastrado com sucesso !");
+  alert("Informe o preco do produto");
+  preco = prompt ("Preco do produto","900.00")
+  alert("Escolha a forma de pagamento","1");
+  pagamento = prompt ("1: Pagamento a vista 50% de desconto\n2: Pagamento em cheque 40% de desconto\n3: Pagamento com cheque pré datado 30 dias(20%)\n4: Pagamento com cheque pré datado 30 e 60 dias(10%)\n5: Pagamento com cheque pré datado 30 60 e 90 dias(5%)\n6: Cartão de Crédito 30% de desconto","1");
+
+  switch (pagamento) {
+    case ("1"):
+    900 - (900*5)/100
+    precofinal = preco-(preco*55)/100;
+    alert ("Valor: " +preco+"\nPagamento a vista 50% de desconto\nDesconto de 5% adicional pelo cadastro\nTotal R$: " +precofinal.toFixed(2));
+    break;
+
+
+    case ("2"):
+    precofinal = preco-(preco*45)/100;
+    alert ("Valor: " +preco+"\nPagamento em cheque 40% de desconto\nDesconto de 5% adicional pelo cadastro\nTotal R$: " +precofinal.toFixed(2));
+    break;
+
+    case ("3"):
+    precofinal = preco-(preco*25)/100;
+    alert ("Valor: " +preco+"\nPagamento com cheque pré datado 30 dias(20%)\nDesconto de 5% adicional pelo cadastro\nTotal R$: " +precofinal.toFixed(2));
+    break;
+
+    case ("4"):
+    precofinal = preco-(preco*15)/100;
+    alert ("Valor: " +preco+"\nPagamento com cheque pré datado 30 e 60 dias(10%)\nDesconto de 5% adicional pelo cadastro\nTotal R$: " +precofinal.toFixed(2));
+    break;
+
+    case ("5"):
+    precofinal = preco-(preco*10)/100;
+    alert ("Valor: " +preco+"\nPagamento com cheque pré datado 30 60 e 90 dias(5%)\nDesconto de 5% adicional pelo cadastro\nTotal R$: " +precofinal.toFixed(2));
+    break;
+
+    case ("6"):
+    precofinal = preco-(preco*35)/100;
+    alert ("Valor: " +preco+"\nCartão de Crédito 30% de desconto\nDesconto de 5% adicional pelo cadastro\nTotal R$: " +precofinal.toFixed(2));
+
+      break;
+      default:
+      alert("Nenhuma das formas de pagamentos foram escolhida")
+  }
+break;
+
+  case ("2"):
+  alert("CLIENTE: "+nome+" \nNao cadastrado !");
+  alert("Informe o preco do produto");
+  preco = prompt ("Preco do produto","900.00")
+  alert("Escolha a forma de pagamento");
+  pagamento = prompt ("1: Pagamento a vista 50% de desconto\n2: Pagamento em cheque 40% de desconto\n3: Pagamento com cheque pré datado 30 dias(20%)\n4: Pagamento com cheque pré datado 30 e 60 dias(10%)\n5: Pagamento com cheque pré datado 30 60 e 90 dias(5%)\n6: Cartão de Crédito 30% de desconto","1");
+
+
+
+
+  case ("1"):
+  precofinal = preco-(preco*50)/100;
+  alert ("Valor: " +preco+"\nPagamento a vista 50% de desconto\nTotal R$: " +precofinal.toFixed(2));
+  break;
+
+  case ("2"):
+  precofinal = preco-(preco*40)/100;
+  alert ("Valor: " +preco+"\nPagamento em cheque 40% de desconto\nTotal R$: " +precofinal.toFixed(2));
+  break;
+
+  case ("3"):
+  precofinal = preco-(preco*20)/100;
+  alert ("Valor: " +preco+"\nPagamento com cheque pré datado 30 dias(20%)\nTotal R$: " +precofinal.toFixed(2));
+  break;
+
+  case ("4"):
+  precofinal = preco-(preco*10)/100;
+  alert ("Valor: " +preco+"\nPagamento com cheque pré datado 30 e 60 dias(10%)\nTotal R$: " +precofinal.toFixed(2));
+  break;
+
+  case ("5"):
+  precofinal = preco-(preco*5)/100;
+  alert ("Valor: " +preco+"\nPagamento com cheque pré datado 30 60 e 90 dias(5%)\nTotal R$: " +precofinal.toFixed(2));
+  break;
+
+  case ("6"):
+  precofinal = preco-(preco*30)/100;
+  alert ("Valor: " +preco+"\nCartão de Crédito 30% de desconto\nTotal R$: " +precofinal.toFixed(2));
+
+    break;
+    default:
+    alert("Nenhuma das formas validas de pagamentos foram escolhida")
+}
+</script>
